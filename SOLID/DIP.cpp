@@ -17,6 +17,5 @@ struct TermalSensor: ISensor{ float readTemperature() override { return 24.; } }
 #include "di.hpp"
 
 int main(){
-    <
     return 0;
 }
