@@ -1,4 +1,15 @@
 #include <iostream>
+/*
+BRIDGE
+
+The bridge here is Renderer is an interface that boths ways of doing sth
+implements it, this is the bridge that let us renderer our Geometry objects 
+with diferent kinds of renderer without knowing which actual is.
+
+The other part of the bridge we can say is the Shape class that KNOWS renderer
+exists and defines abstract methods that the different types of Shapes and 
+different types of renderer must perform
+*/
 struct Renderer{
     virtual void render_circle(float x, float y, float r)=0;
 };
